@@ -8,5 +8,5 @@ install:
    - java -version
    - echo "Running a custom install command..."
    - ./gradlew clean build assemble -x test
-   - mvn clean install
+   - ./gradlew publishToMavenLocal
 
