@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.ghubstan'
-version '0.1.0-SNAPSHOT'
+version '0.1.1-SNAPSHOT'
 sourceCompatibility = 1.15
 
 repositories {
@@ -93,8 +93,8 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.ghubstan'
-            artifactId = 'misq-threadmodel'
-            version = '0.1.0-SNAPSHOT'
+            artifactId = 'jitpackpubdemo'
+            version = '0.1.1-SNAPSHOT'
 
             from components.java
         }
