@@ -80,6 +80,7 @@ test {
 
 publishing {
     // $ ./gradlew clean build assemble publish
+    // Create pom.xml -> ./gradlew clean build publishToMavenLocal
     repositories {
         maven {
             name = "GitHubPackages"

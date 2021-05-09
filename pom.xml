@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.ghubstan</groupId>
   <artifactId>jitpackpubdemo</artifactId>
-  <version>0.1.6-SNAPSHOT</version>
+  <version>0.1.7-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>com.github.jitpack</groupId>
