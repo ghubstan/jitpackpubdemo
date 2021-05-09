@@ -26,5 +26,6 @@ hs_err_pid*
 
 # Extra-default ignores
 build
+target
 .idea
 .gradle
