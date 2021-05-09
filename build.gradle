@@ -4,8 +4,7 @@ plugins {
 }
 
 group = 'com.github.ghubstan'
-version '0.1.7-SNAPSHOT'
-sourceCompatibility = 1.15
+version '1.0.0'
 
 repositories {
     mavenCentral()
@@ -17,6 +16,7 @@ java {
 }
 
 tasks.named('compileJava') {
+    sourceCompatibility = 15
     modularity.inferModulePath = true
     options.javaModuleVersion = provider { project.version }
     options.compilerArgs += ['-Xdoclint:none', '-Xlint:none', '-nowarn']
@@ -73,7 +73,6 @@ dependencies {
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
 }
 
-
 test {
     useJUnitPlatform()
 }
@@ -87,7 +86,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/ghubstan/jitpackpubdemo")
             credentials {
                 username = "ghubstan"
-                password =  "xxx" // "my-ghub-token-goes-here"
+                password =  "[ghub-token]"
             }
         }
     }
@@ -95,7 +94,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.ghubstan'
             artifactId = 'jitpackpubdemo'
-            version = '0.1.7-SNAPSHOT'
+            version = '1.0.0'
 
             from components.java
         }
